@@ -1,5 +1,3 @@
-# $Rev: 3368 $, $Date: 2005-08-27 17:42:47 $
-#
 Summary:	viewres application
 Summary(pl):	Aplikacja viewres
 Name:		xorg-app-viewres
@@ -16,10 +14,7 @@ BuildRequires:	automake
 BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
-BuildRoot:	%{tmpdir}/viewres-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 viewres application.
@@ -27,11 +22,9 @@ viewres application.
 %description -l pl
 Aplikacja viewres.
 
-
 %prep
 %setup -q -n viewres-%{version}
 %patch0 -p1
-
 
 %build
 %{__aclocal}
@@ -42,17 +35,14 @@ Aplikacja viewres.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
