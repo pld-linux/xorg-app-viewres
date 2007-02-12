@@ -1,5 +1,5 @@
 Summary:	viewres application
-Summary(pl):	Aplikacja viewres
+Summary(pl.UTF-8):   Aplikacja viewres
 Name:		xorg-app-viewres
 Version:	1.0.1
 Release:	1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 viewres application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja viewres.
 
 %prep
