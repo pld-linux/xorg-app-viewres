@@ -1,5 +1,5 @@
 Summary:	viewres application
-Summary(pl.UTF-8):   Aplikacja viewres
+Summary(pl.UTF-8):	Aplikacja viewres
 Name:		xorg-app-viewres
 Version:	1.0.1
 Release:	1
