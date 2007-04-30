@@ -1,5 +1,5 @@
-Summary:	viewres application
-Summary(pl.UTF-8):	Aplikacja viewres
+Summary:	viewres application - graphical class browser for Xt
+Summary(pl.UTF-8):	Aplikacja viewres - graficzna przeglądarka klas dla Xt
 Name:		xorg-app-viewres
 Version:	1.0.1
 Release:	1
@@ -18,10 +18,19 @@ Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-viewres application.
+The viewres program displays a tree showing the widget class hierarchy
+of the Athena Widget Set. Each node in the tree can be expanded to
+show the resources that the corresponding class adds (i.e. does not
+inherit from its parent) when a widget is created. This application
+allows the user to visually examine the structure and inherited
+resources for the Athena Widget Set.
 
 %description -l pl.UTF-8
-Aplikacja viewres.
+Program viewres wyświetla drzewo obrazujące hierarchię klas widgetów
+Athena. Każdy węzeł drzewa może być rozszerzony aby pokazywać zasoby
+dodawane przez odpowiadającą mu klasę (tzn. nie dziedziczone od
+rodzica) podczas tworzenia widgetu. Ta aplikacja pozwala użytkownikowi
+wizualnie przeglądać strukturę i dziedziczone zasoby widgetów Athena.
 
 %prep
 %setup -q -n viewres-%{version}
