@@ -2,11 +2,12 @@ Summary:	viewres application - graphical class browser for Xt
 Summary(pl.UTF-8):	Aplikacja viewres - graficzna przeglądarka klas dla Xt
 Name:		xorg-app-viewres
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/viewres-%{version}.tar.bz2
 # Source0-md5:	cdbed540daf7975b56000420c9aa5bf9
+Patch0:		%{name}-xaw.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -34,6 +35,7 @@ wizualnie przeglądać strukturę i dziedziczone zasoby widgetów Athena.
 
 %prep
 %setup -q -n viewres-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
