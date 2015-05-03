@@ -2,7 +2,7 @@ Summary:	viewres application - graphical class browser for Xt
 Summary(pl.UTF-8):	Aplikacja viewres - graficzna przeglądarka klas dla Xt
 Name:		xorg-app-viewres
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/viewres-%{version}.tar.bz2
@@ -60,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/viewres
 %{_datadir}/X11/app-defaults/Viewres
 %{_datadir}/X11/app-defaults/Viewres-color
-%{_mandir}/man1/viewres.1x*
+%{_mandir}/man1/viewres.1*
